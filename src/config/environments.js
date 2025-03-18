@@ -1,3 +1,3 @@
-const API_URL = "monitorias-back.railway.internal";
+const API_URL = "https://monitorias-back.up.railway.app";
 
 export default API_URL;
