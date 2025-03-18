@@ -1,0 +1,35 @@
+.auth-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-in-out;
+}
+
+.auth-container.rotated {
+    transform: rotateY(180deg);
+}
+
+.form {
+    position: absolute !important;
+    transform: translate(-50%, -50%);
+    transition: transform 1s ease-in-out;
+    backface-visibility: hidden; 
+}
+
+.login-container, .register-container {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.register-container {
+    transform: rotateY(180deg);
+}
+
+.login-container {
+    transform: rotateY(0deg);
+}
+
